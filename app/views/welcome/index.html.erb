@@ -1,12 +1,13 @@
 <h1>Seja Bem-Vindo</h1>
-<p>Caio Correa</p>
-<!--
-  mais um filho do asp??
--->
-<p>1 + 1 != <%= 1+1 %></p>
+<p><strong>Data: <%= data_br(Date.today) %></strong></p>
 
-<p>Seu nome de tras para frente é: <%= "Caio".reverse %></p>
+<h2><%= nome_aplicacao%><h2>
+<ul>
+  <!--
+    De preferencia utilizar o link_to ao inves do <a>
+  -->
+ <li>
+  <%= link_to "Cadastro de Moedas", coins_path %>
+ </li>
 
-<% ax = "Variavel que varia"%>
-<p>Imprimindo a Variavel: <%= ax %></p>
-<p>Data atual: <%= Date.today%></p>
+</ul>
