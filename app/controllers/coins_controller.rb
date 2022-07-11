@@ -1,4 +1,8 @@
 class CoinsController < ApplicationController
+  
+  # definindo o Layout da pagina
+  layout "adm"
+  
   before_action :set_coin, only: %i[ show edit update destroy ]
 
   # GET /coins or /coins.json

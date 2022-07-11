@@ -1,24 +1,14 @@
-# README
+<h1 style="text-align:center"> CriptoWallet</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Estudo da utilização dos principais fundamentos de Ruby on Rails
 
-Things you may want to cover:
+Este projeto segue o curso de react <a href="https://www.udemy.com/course/rubyonrails-5x/">Ruby on Rails 5.x - Do início ao fim!
+| Udemy</a>
 
-* Ruby version
+<br>
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Lista de recursos usados em aula para este projeto
+| Dependencias | versão |
+| ------ | ------ |
+| ruby | 2.4.10p364 |
+| rails | 5.8.2 |
