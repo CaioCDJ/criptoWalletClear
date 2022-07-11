@@ -2,12 +2,14 @@
 <p><strong>Data: <%= data_br(Date.today) %></strong></p>
 
 <h2><%= nome_aplicacao%><h2>
-<ul>
-  <!--
-    De preferencia utilizar o link_to ao inves do <a>
-  -->
- <li>
-  <%= link_to "Cadastro de Moedas", coins_path %>
- </li>
 
-</ul>
+  <%= render "menu"%>
+<p>
+  Voce esta em ambiente de <strong> <%= ambiente_rails %></strong>
+</p>
+<p>
+  Variavel de instancia/sessão <%= @nome %>
+</p>
+<p>
+  Curso: <%= @curso %>
+</p>
