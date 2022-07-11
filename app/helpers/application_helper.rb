@@ -14,4 +14,7 @@ module ApplicationHelper
   def nome_aplicacao
     "Criptowallet"
   end
+
+  # Constantes tambem funcionam
+  NOME = 'Criptowallet'
 end
