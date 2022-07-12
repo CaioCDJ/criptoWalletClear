@@ -25,4 +25,10 @@ module ApplicationHelper
       "Teste"
     end
   end
+
+  def locale
+    
+    I18n.locale==:en ? "ingles - Americano" : "Portugues - Brasil"
+  
+  end
 end

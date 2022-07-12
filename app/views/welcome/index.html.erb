@@ -1,5 +1,7 @@
 <h1>Seja Bem-Vindo</h1>
-<p><strong>Data: <%= data_br(Date.today) %></strong></p>
+<p><strong>Data: <%= I18n.l(Date.today) %></strong></p>
+<p>O seu idioma é: <strong><%= locale%></strong></p>
+<p> <%= t("hello") %></p>
 
 <h2><%= nome_aplicacao%><h2>
 
