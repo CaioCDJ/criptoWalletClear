@@ -6,8 +6,8 @@ namespace :dev do
       show_spinner("Apagando DB..."){ %x(rails db:drop )}
       show_spinner("Criando DB..."){ %x(rails db:create ) }
       show_spinner("Migrando DB..."){ %x(rails db:migrate ) }
-      %x(rails dev:add_coins ) 
       %x(rails dev:add_mining_types ) 
+      %x(rails dev:add_coins ) 
     else
       puts "Você não está em ambiente de desenvolvimento!"
     end
@@ -21,17 +21,20 @@ namespace :dev do
     {
       description: "Bitcoin",
       acronym:"BTC",
-      url_image:"https://logos-world.net/wp-content/uploads/2020/08/Bitcoin-Emblem.png"
+      url_image:"https://logos-world.net/wp-content/uploads/2020/08/Bitcoin-Emblem.png",
+      mining_type:MiningType.find_by(acronym:"PoW")
     },
     {
       description: "Ethereum",
       acronym:"ETH",
-      url_image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png"
+      url_image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Ethereum_logo_2014.svg/1257px-Ethereum_logo_2014.svg.png",
+      mining_type:MiningType.all.sample
     },
     {
       description: "Monero",
       acronym:"XMR",
-      url_image:"https://seeklogo.com/images/M/monero-logo-4EB9795194-seeklogo.com.png"
+      url_image:"https://seeklogo.com/images/M/monero-logo-4EB9795194-seeklogo.com.png",
+      mining_type:MiningType.all.sample
   }
 ]
 
