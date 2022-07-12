@@ -5,7 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
- spinner = TTY::Spinner.new("[:spinner] Cadastrando Moedas" )
+=begin
+spinner = TTY::Spinner.new("[:spinner] Cadastrando Moedas" )
       spinner.auto_spin   
 # facilidade
 coins = [
@@ -34,3 +35,4 @@ end
 
 
 spinner.success('(Concluido com sucesso!)');
+=end
