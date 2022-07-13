@@ -1,8 +1,12 @@
 "pt-BR":
   activerecord:
     models:
-      coin: Moeda
-      mining_type: Tipo de Minerão
+      coin:
+        one: Moeda
+        other: Moedas
+      mining_type: 
+        one: Tipo de Minerão
+        other: Tipos de mineração
     attributes:
       coin:
         id: Codigo
