@@ -13,14 +13,3 @@
  *= require_self
  */
 
-h1{
-  margin-bottom: 10px;
-}
-a{
-  color:#fff;
-  font-weight:700;
-}
-a:hover{
-  background: transparent;
-  font-weight:1000
-}
