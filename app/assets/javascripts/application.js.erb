@@ -14,3 +14,7 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// facil de se mesclar com js
+<% msg = Time.now.hour < 12 ? "Bom dia" : "Ola!!" %>
+alert("<%= msg %>");
